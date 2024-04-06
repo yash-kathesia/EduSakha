@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="shortcut icon" href="EduSakha_Logo.png" type="image/x-icon">
+    <style>
+        /* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and center the content */
+.addEvent {
+    display: flex;
+    margin:10px 20px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    flex-direction:column;
+}
+.addEvent h2{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: rgb(39, 21, 199);
+}
+/* Style the form container */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Style form inputs and textarea */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="image"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Add animation to the form */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+form {
+    animation: slideIn 0.5s ease;
+}
+.addEvent  .addEventbtn a{
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.addEvent button{
+    display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Wider button for better clickability */
+            height: 50px;
+            background-color: #007bff; /* Blue color for the button */
+            color: white; /* Text color for better contrast */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: auto; /* Center the button */
+            margin-top: 10px; /* Add spacing between the description and the button */
+}
+.gobackbtn, .createeventbtn{
+    display: inline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="addEvent">
+        <h2>Add an Event</h2>
+        <label for="eventTitle">Event Title: </label>
+        <input type="text" placeholder="Enter Event Title Here" name="eventTitle" id="eventTitle"><br>
+        <label for="eventDescp">Event Description: </label>
+        <textarea name="eventDescp" id="eventDescp" cols="30" rows="10" placeholder="Enter Event Description Here"></textarea><br>
+    
+        <label for="eventStartDate">Event Starting Date: </label>
+        <input type="date" name="eventStartDate" id="eventStartDate">
+        <label for="eventStartingTime">Event Starting Time:</label>
+        <input type="time" name="eventStartingTime" id="eventStartingTime"><br>
+    
+        <label for="eventEndDate">Event Ending Date: </label>
+        <input type="date" name="eventEndDate" id="eventEndDate">
+        <label for="eventEndingTime">Event Ending Time:</label>
+        <input type="time" name="eventEndingTime" id="eventEndingTime"><br>
+        
+        <label for="registrationStartDate">Registration Starting Date: </label>
+        <input type="date" name="registrationStartDate" id="registrationStartDate">
+        <label for="registrationEndDate">Registration End Date:</label>
+        <input type="date" name="registrationEndDate" id="registrationEndDate"><br>
+        
+        <label for="eventVenue">Event Venue:</label>
+        <input type="text" name="eventVenue" id="eventVenue"><br>
+        
+        <label for="eventPoster">Event Poster:</label>
+        <input type="file" name="eventPoster" id="eventPoster" height="35px" width="40px"><br>
+    
+        <label for="eventOrgaName">Event Organization Name:</label>
+        <input type="text" name="eventOrgaName" id="eventOrgaName"><br>
+        
+        <div class="addEventbtn">
+            <a href="">
+                <button id="createeventbtn">
+                    Create Event
+                </button>
+                <button id="gobackbtn">
+                    &lAarr; Go Back
+                </button>
+            </a>
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>

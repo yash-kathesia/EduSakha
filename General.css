@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* gap: 10px !important; */
+}
+.mainEvents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.add{
+   display: flex;
+   margin-top: 100px;
+   justify-content: center;
+}
+.up {
+  padding: 25px;
+  width: 100vw !important;
+}
+.on {
+  padding: 25px;
+  margin-top: 18px;
+}
+.cmp{
+    padding: 25px;
+    margin-top: 10px;
+}
+.card {
+  width: 200px;
+  transition: all 10s;
+}
+.card.a:hover {
+  transform: rotateY(30deg);
+  background-color: aqua;
+}
+.titleAdd {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card img{
+  height: 130px;
+}
