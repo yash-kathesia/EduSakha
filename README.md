@@ -1,4 +1,4 @@
-# HackOut-23
+# EduSakha
 Project Title: EduSakha Event Handlers
 This is the Project regarding the HackOut'23 Problem Statement.
 Edusakha gatherings Feature facilitates virtual gatherings between colleges and potential students in an effort to improve the platform's engagement capabilities.
